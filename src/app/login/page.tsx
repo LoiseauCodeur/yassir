@@ -1,9 +1,9 @@
 export default function login() {
   return (
-    <div>
+    <div className="h-[70vh] mt-[150px]">
       <h1 className="text-center text-3xl ">S'inscrire</h1>
       <form
-        className="md:grid md:grid-cols-2 gap-4 justify-between h-[73vh] m-5 p-5 bg-slate-50"
+        className=" md:grid md:grid-cols-2 gap-4 justify-between m-5 p-5 bg-slate-50"
         action=""
         method=""
       >
@@ -54,6 +54,21 @@ export default function login() {
         </div>
         <div className="mb-4">
           <label
+            htmlFor="motDePasse"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Confirmer le mot de passe :
+          </label>
+          <input
+            type="password"
+            id="motDePasse"
+            name="motDePasse"
+            required
+            className="w-full px-3 py-2 border rounded-md"
+          />
+        </div>
+        <div className="mb-4">
+          <label
             htmlFor="genre"
             className="block text-sm font-medium text-gray-700"
           >
@@ -80,7 +95,39 @@ export default function login() {
             />
             J'accepte les conditions d'utilisation
           </label>
+          <h6 className="underline mt-5">Recevoir nos mails mails :</h6>
+          <label htmlFor="checkbox" className="flex items-center">
+            <input
+              type="radio"
+              id="checkbox"
+              name="option 2"
+              required
+              className="mr-2"
+            />
+            Quotidiennement
+          </label>
+          <label htmlFor="checkbox1" className="flex items-center">
+            <input
+              type="radio"
+              id="checkbox1"
+              name="option 3"
+              required
+              className="mr-2"
+            />
+            Hebdomadairement
+          </label>
+          <label htmlFor="checkbox2" className="flex items-center">
+            <input
+              type="radio"
+              id="checkbox2"
+              name="option 4"
+              required
+              className="mr-2"
+            />
+            Jamais
+          </label>
         </div>
+
         <div>
           <button
             type="submit"

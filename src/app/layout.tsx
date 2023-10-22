@@ -10,7 +10,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className='z-0 bg-sky-100'>
-        <Header />
+        <Header>
+        </Header>
         {children}
         <Footer />
       </body>

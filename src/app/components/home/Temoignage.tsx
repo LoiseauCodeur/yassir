@@ -13,7 +13,7 @@ const Temoignage = () => {
 
   return (
     <section id="temoignage" className="mb-5">
-      <h2 className="text-2xl text-center font-bold m-5">Témoignages</h2>
+      <h2 className="text-2xl text-center overline font-bold m-5 text-red-500">Témoignages</h2>
       <div className="flex flex-col gap-5">
         <article className="p-5 flex gap-[2%] bg-green-200  rounded-r-full">
           <div>
